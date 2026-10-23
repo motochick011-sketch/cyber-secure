@@ -1,0 +1,279 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
+// ignore_for_file: type=lint, type=warning, deprecated_member_use, deprecated_member_use_from_same_package
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'app_state.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format off
+T _$identity<T>(T value) => value;
+/// @nodoc
+mixin _$AppData {
+
+ AppStatus get appStatus;
+/// Create a copy of AppData
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AppDataCopyWith<AppData> get copyWith => _$AppDataCopyWithImpl<AppData>(this as AppData, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  final _this = this as AppData;
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AppData&&(identical(other.appStatus, _this.appStatus) || other.appStatus == _this.appStatus));
+}
+
+
+@override
+int get hashCode {
+  final _this = this as AppData;
+  return Object.hash(runtimeType,_this.appStatus);
+}
+
+@override
+String toString() {
+  final _this = this as AppData;
+  return 'AppData(appStatus: ${_this.appStatus})';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $AppDataCopyWith<$Res>  {
+  factory $AppDataCopyWith(AppData value, $Res Function(AppData) _then) = _$AppDataCopyWithImpl;
+@useResult
+$Res call({
+ AppStatus appStatus
+});
+
+
+
+
+}
+/// @nodoc
+class _$AppDataCopyWithImpl<$Res>
+    implements $AppDataCopyWith<$Res> {
+  _$AppDataCopyWithImpl(this._self, this._then);
+
+  final AppData _self;
+  final $Res Function(AppData) _then;
+
+/// Create a copy of AppData
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? appStatus = null,}) {
+  return _then(AppData(
+appStatus: null == appStatus ? _self.appStatus : appStatus // ignore: cast_nullable_to_non_nullable
+as AppStatus,
+  ));
+}
+
+}
+
+
+/// Adds pattern-matching-related methods to [AppData].
+extension AppDataPatterns on AppData {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _AppData value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _AppData() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _AppData value)  $default,){
+final _that = this;
+switch (_that) {
+case _AppData():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _AppData value)?  $default,){
+final _that = this;
+switch (_that) {
+case _AppData() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( AppStatus appStatus)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _AppData() when $default != null:
+return $default(_that.appStatus);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( AppStatus appStatus)  $default,) {final _that = this;
+switch (_that) {
+case _AppData():
+return $default(_that.appStatus);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( AppStatus appStatus)?  $default,) {final _that = this;
+switch (_that) {
+case _AppData() when $default != null:
+return $default(_that.appStatus);case _:
+  return null;
+
+}
+}
+
+}
+
+/// @nodoc
+
+
+class _AppData implements AppData {
+  const _AppData({this.appStatus = AppStatus.initializing});
+  
+
+@override@JsonKey() final  AppStatus appStatus;
+
+/// Create a copy of AppData
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AppDataCopyWith<_AppData> get copyWith => __$AppDataCopyWithImpl<_AppData>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+    return identical(this, other) || (other.runtimeType == runtimeType&&other is _AppData&&(identical(other.appStatus, appStatus) || other.appStatus == appStatus));
+}
+
+
+@override
+int get hashCode {
+    return Object.hash(runtimeType,appStatus);
+}
+
+@override
+String toString() {
+    return 'AppData(appStatus: $appStatus)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AppDataCopyWith<$Res> implements $AppDataCopyWith<$Res> {
+  factory _$AppDataCopyWith(_AppData value, $Res Function(_AppData) _then) = __$AppDataCopyWithImpl;
+@override @useResult
+$Res call({
+ AppStatus appStatus
+});
+
+
+
+
+}
+/// @nodoc
+class __$AppDataCopyWithImpl<$Res>
+    implements _$AppDataCopyWith<$Res> {
+  __$AppDataCopyWithImpl(this._self, this._then);
+
+  final _AppData _self;
+  final $Res Function(_AppData) _then;
+
+/// Create a copy of AppData
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? appStatus = null,}) {
+  return _then(_AppData(
+appStatus: null == appStatus ? _self.appStatus : appStatus // ignore: cast_nullable_to_non_nullable
+as AppStatus,
+  ));
+}
+
+
+}
+
+// dart format on

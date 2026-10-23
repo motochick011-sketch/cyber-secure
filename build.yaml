@@ -1,0 +1,14 @@
+# Restrict code generation to lib/ only.
+#
+# By default build_runner also scans example/, test/, web/, and benchmark/.
+# The reference files under example/ are copy-paste templates (no imports, not
+# meant to compile), so letting the generators touch them produces errors. The
+# `sources` list below limits every generator to lib/, so example/ is ignored
+# entirely — and deleting the example/ directory changes nothing here.
+targets:
+  $default:
+    sources:
+      - lib/**
+      - assets/**
+      - pubspec.yaml
+      - $package$
